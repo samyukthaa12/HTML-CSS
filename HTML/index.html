@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<br>
+<!-- <a>tag = anchor tag -->
+<!-- it creates a link which links one page to another -->
+<!-- <a href="link">placeholder</a>  -->
+<!-- ATTRIBUTES OF ANCHOR TAG -->
+    <a href="./Image/Bird.jpg" download="pic.jpg">Image</a><br>   
+    <a href="https://www.youtube.com/">Youtube</a><br>
+    <a href="about.html" hreflang="en">Version English</a><br>
+    <a href="https://www.w3schools.com/js/" ping="/Click">Visit W3Schools</a><br>
+    <a href="https://www.youtube.com/watch?v=lTxn2BuqyzU&pp=ygURc21hbGwgYW5pbWUgdmlkZW8%3D" type="Video">Watch Video</a><br>
+
+<!-- button tag -->
+<button type="button">Click</button> <br>
+<button autofocus>Click me</button> <br>
+<button disabled>Can't click</button> <br>
+<form id="form">
+    <button form="form" type="submit">Submit</button><br>
+    <button type="submit" formaction="/submit">Submit</button><br>
+    <button type="submit" formenctype="multipart/form-data">Upload</button><br>
+    <button type="submit" formmethod="post">Submit-Post</button><br>
+    <button type="submit" formnovalidate>without validation</button><br>
+    <button type="submit" formtarget="blank">Submit in new tab</button><br>
+    <button popovertarget="pop">show</button> <div id="pop" style="display: none;">This is pop</div><br>
+    <button popovertarget="pop" popovertargetaction="Toggle">Toggle</button><br>
+    <button name="sub_btn" type="submit">Submit</button><br>
+    <button type="button">Button</button><br>
+    <button type="reset">Reset</button><br>
+    <button type="submit">Submit</button><br>
+    <button type="submit" value="SubmitForm">Submit Form</button><br>
+</form>
+
+<!-- <h1>-<h6> heading tags  -->
+    <h1>Welcome</h1>
+    <h2>Welcome</h2>
+    <h3>Welcome</h3>
+    <h4>Welcome</h4>
+    <h5>Welcome</h5>
+    <h6>Welcome</h6>
+
+<!-- <i>tag -->
+<p><i>Welcome to my page</i></p>
+
+<!-- <img> tag -->
+ <img 
+   src="./Image/Bird.jpg"
+   alt="Image of a bird"
+   width="600"
+   height="400"
+   srcset="./Image/Bird.jpg 480w, ./Image/Bird.jpg 800w, ./Image/Bird.jpg 1200w"
+   sizes="(max-width: 600px) 480px, (max-width: 1000px) 800px, 1200px"
+   loading="lazy"
+   crossorigin="anonymous"
+   referrerpolicy="no-referrer"
+   usemap="#birdmap"
+   ismap
+   longdesc="description.html"><br><br>
+
+<!-- <iframe>tag -->
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62168.25603463506!2d78.08487515028774!3d13.12981881284111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3badf08b9595accd%3A0x43ef935427fdf3d0!2sKolar%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1721830576407!5m2!1sen!2sin" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="true" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe> <br><br>
+
+<!-- <input> tag -->
+ <form id="myform">
+    <input
+    type="text"
+    name="username"
+    placeholder="Enter your name"
+    minlength="3"
+    maxlength="20"
+    size="30"
+    required
+    autocomplete="on"
+    autofocus
+    pattern="[A-Za-z ]+"
+    dirname="username.dir"
+    list="usernames"
+  > <br>
+  <!-- Email input with multiple selection -->
+  <input
+    type="email"
+    name="emails"
+    multiple
+    placeholder="Enter your email(s)"
+  > <br>
+  <!-- File input with accept -->
+  <input
+    type="file"
+    name="upload"
+    accept="image/*"
+    multiple
+  > <br>
+
+  <!-- Number input with step and range -->
+  <input
+    type="number"
+    name="age"
+    min="18"
+    max="100"
+    step="1"
+    value="25"
+  > <br>
+
+  <!-- Checkbox with checked -->
+  <input
+    type="checkbox"
+    name="subscribe"
+    value="yes"
+    checked
+  > Subscribe
+
+  <!-- Read-only and disabled field -->
+  <input
+    type="text"
+    value="ReadOnly Text"
+    readonly
+  > <br>
+
+  <input
+    type="text"
+    value="Disabled Text"
+    disabled
+  > <br>
+
+  <!-- Submit button with form-related attributes -->
+  <input
+    type="submit"
+    formaction="/custom-submit"
+    formenctype="multipart/form-data"
+    formmethod="post"
+    formtarget="_blank"
+    formnovalidate
+    value="Submit"
+  > <br>
+
+  <!-- Input as image button -->
+  <input
+    type="image"
+    src="submit.png"
+    alt="Submit"
+    width="50"
+    height="30"
+    formaction="/image-submit"
+    formenctype="application/x-www-form-urlencoded"
+    formmethod="post"
+    formtarget="_self"
+  > <br>
+
+  <!-- Button input with popover -->
+  <input
+    type="button"
+    value="More Info"
+    popovertarget="infoPopover"
+    popovertargetaction="toggle"
+  > <br>
+ </form>
+
+ <!-- <table> tag -->
+    <table border="1" cellpadding="10" cellspacing="5" width="80%" align="center" bgcolor="#f9f9f9" summary="Student marks for 3 subjects">
+        <caption><strong>Student Report Card</strong></caption>
+        <thead bgcolor="#e0e0e0">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Math</th>
+            <th scope="col">Science</th>
+            <th scope="col">English</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Samyu</td>
+            <td align="center">88</td>
+            <td align="center">92</td>
+            <td align="center">85</td>
+          </tr>
+          <tr>
+            <td>Madhu</td>
+            <td align="center">79</td>
+            <td align="center">95</td>
+            <td align="center">91</td>
+          </tr>
+        </tbody>
+        <tfoot bgcolor="#e0e0e0">
+          <tr>
+            <td><strong>Average</strong></td>
+            <td align="center">83.5</td>
+            <td align="center">93.5</td>
+            <td align="center">88</td>
+          </tr>
+        </tfoot>
+      </table><br><br>
+
+
+<!-- <div> tag -->
+    <div id="container" style="width: 80%; margin: auto; padding: 20px; background-color: #eaf4fc; border: 2px solid #0077b6;">
+        <h2 style="text-align: center; color: #023e8a;">Welcome to My Profile</h2>
+    
+        <!-- Highlight section with class -->
+        <div class="highlight" style="background-color: #ade8f4; padding: 15px; border-radius: 10px;" title="Editable Section" contenteditable="true">
+          This section is editable. Click and type here!
+        </div>
+    
+        <!-- Hidden div -->
+        <div style="display: none;">
+          This div is hidden using inline style.
+        </div>
+    
+        <!-- Right-to-left language -->
+        <div lang="en" dir="rtl" style="margin-top: 20px; background-color: #fff3cd; padding: 10px;">
+          hello all
+        </div>
+      </div>
+      
+</body>
+</html>
